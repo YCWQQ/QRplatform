@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>华美龙物联网管理系统</title>
+<!-- Custom Theme files -->
+ <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+<link href="login/css/Logo2style.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="login/css/logoBottom.css">
+<link rel="stylesheet" type="text/css" media="screen" href="login/css/bootstrap.min.css">
+</head>
+<body>
+<!--header start here-->
+<div class="login-form">
+			<h1>Login</h1>
+			<div class="login-top">
+			<form>
+				<div class="login-ic">
+					<i></i>
+					<input type="text" id="userName" placeholder="Username">
+					<div class="clear"> </div>
+				</div>
+				<div class="login-ic">
+					<i class="icon"></i>
+					<input type="password" id="userPwd" placeholder="Password">
+					<div class="clear"> </div>
+				</div>
+			    <div style="float: left;width: 70%;">
+                  <span style="font-size: 15px;color: #fff;">主题选择：</span>
+                  <select id="classVue" style="height: 55px;width:50%;font-size: 15px;color:  rgb(249, 247, 247);background-color: rgba(200, 162, 162, 0.65);">
+                      <option value="smart-style-0">Smart Default</option>
+                        <option value="smart-style-1">Dark Elagance</option> 
+                        <option  selected value="smart-style-2">Ultra Light</option> 
+                        <option value="smart-style-3">Google Skin</option> 
+                        <option value="smart-style-4">PixelSmash</option> 
+                        <option value="smart-style-5">Glass</option> 
+                        <option value="smart-style-6">MaterialDesign</option>  
+                        <option value="ng">ng Style</option>
+                  </select>
+            	</div> 
+				<div class="log-bwn">
+					<input type="submit" id="Login" value="登&nbsp;&nbsp;&nbsp;录">
+				</div>
+				</form>
+			</div>
+</div>	
+<div class="footer">	  
+		 <div class="connects">
+		     <p style="float: right">
+	          <span> ©2009-2017 MACS&nbsp;&nbsp;&nbsp;此类浏览器运行系统效果更佳：</span>
+	             <a href="http://www.googlechromer.cn/" style="margin: -4px 0 0 -15px;width: 80px;" title="点击下载谷歌浏览器">
+	                <img class="vchrom" src="login/img/vChrom.png"></img>
+	            </a>
+	            <a  href="http://browser.qq.com" title="点击下载QQ浏览器">
+	                <img class="vqq" src="login/img/vQQ.png"></img>
+	            </a>
+	            <a  href="https://www.mozilla.org/zh-CN/firefox/new/" style="margin-top: -8px;width: 50px;" title="点击下载火狐浏览器">
+	                <img class="vfix" src="login/img/vfix.png"></img>
+	            </a> 
+	          </p>        		     
+		</div>
+</div>
+ <script src="js/plugin/pace/pace.min.js"></script>
+    <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+    <script> if (!window.jQuery) { document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>'); } </script>
+    <script> if (!window.jQuery.ui) { document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>'); } </script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/function.js"></script>
+    <!-- IMPORTANT: APP CONFIG -->
+    <script src="js/app.config.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- JQUERY VALIDATE -->
+    <script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
+    <!-- JQUERY MASKED INPUT -->
+    <script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="login/js/vue.js"></script>
+<script src="login/js/logoBottom.js"></script>
+<script src="login/js/login.js"></script>
+</body>
+</html>

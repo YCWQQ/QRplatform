@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+	<title></title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Basic Styles -->
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/font-awesome.min.css">
+	<!-- SmartAdmin Styles : Caution! DO NOT change the order -->
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-production-plugins.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-production.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-skins.min.css">
+	<!-- SmartAdmin RTL Support  -->
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-rtl.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/demo.min.css">
+	<!-- FAVICONS -->
+	<link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+	<!-- GOOGLE FONT -->
+	<link rel="stylesheet" href="../css/css.css">
+	<link rel="stylesheet" href="kucuen.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="apple-touch-icon" href="../img/splash/sptouch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../img/splash/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../img/splash/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../img/splash/touch-icon-ipad-retina.png">
+	<!-- iOS web-app metas : hides Safari UI Components and Changes Status Bar Appearance -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- Startup image for web apps -->
+	<link rel="apple-touch-startup-image" href="../img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+	<link rel="apple-touch-startup-image" href="../img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+	<link rel="apple-touch-startup-image" href="../img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+</head>
+<body class="">
+	<!-- HEADER -->
+	<header id="header">
+		<div id="logo-group">
+			<!-- PLACE YOUR LOGO HERE -->
+			<span id="logo"> <a href="/" title="回到首页"><img src="../img/logo.png" alt="SmartAdmin"></a></span>
+			<!-- END LOGO PLACEHOLDER -->
+		</div>
+		<!-- pulled right: nav area -->
+		<div class="pull-right">
+			<!-- collapse menu button -->
+			<div id="hide-menu" class="btn-header pull-right">
+				<span> <a href="./../javascript:void(0);" data-action="toggleMenu" title="隐藏Menu"><i class="fa fa-reorder"></i></a> </span>
+			</div>
+			<!-- end collapse menu -->
+			<!-- logout button -->
+			<div id="logout" class="btn-header transparent pull-right">
+				<span> <a href="./../login.html" title="退出" data-action="userLogout" data-logout-msg="确定要退出管理系统？"><i class="fa fa-sign-out"></i></a> </span>
+			</div>
+			<!-- end logout button -->
+		</div>
+		<!-- end pulled right: nav area -->
+	</header>
+	<!-- END HEADER -->
+	<aside id="left-panel">
+		<div class="login-info">
+			<span> <!-- User image size is adjusted inside CSS, it should stay as it --> 
+				<!-- session open -->
+				<a href="./../javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+					<img src="../img/avatars/sunny.png" alt="me" class="online" /> 
+					<span id="cookie"></span>
+					<i class="fa fa-angle-down"></i>
+				</a> 
+			</span>
+		</div>
+		<!-- end user info -->
+		<nav id="nav-left">
+			
+		</nav>
+		<span class="minifyme" data-action="minifyMenu"> 
+			<i class="fa fa-arrow-circle-left hit"></i> 
+		</span>
+	</aside>
+	<!-- END NAVIGATION -->
+	<!-- MAIN PANEL -->
+	<div id="main" role="main">
+		<!-- RIBBON -->
+		<div id="ribbon">
+			<!-- breadcrumb -->
+			<ol class="breadcrumb">
+				<li><a href="/" title="回到首页">首页</a></li><li>库存报表统计</li>
+			</ol>
+		</div>
+		<!-- END RIBBON -->
+		<!-- MAIN CONTENT -->
+		<div id="content">
+			<section id="widget-grid" class="">
+				<!-- row -->
+				<div class="row">
+					<!-- NEW WIDGET START -->
+					<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<!-- Widget ID (each widget will need unique ID)-->
+						<div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false" data-widget-deletebutton="false">
+							<header>
+								<span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+								<h2>库存统计</h2>
+							</header>
+							<form class="form-horizontal" id="iform" method="post" >
+								<fieldset>
+									<div class="form-group">
+										<label class="col-md-1 control-label">结束时间：</label>
+										<div class="col-md-3">
+											<input class="form-control" name="FinshTime" id="FinshTime" type="text">
+										</div>
+										<label class="col-md-1 control-label">产品名称：</label>
+										<div class="col-md-3">
+											<input class="form-control" name="ProductNo" id="ProductNo" autocomplete="off" placeholder="请输入名称或编号进行查询" type="text">
+											<input type="text" id="ProductNoGet" style="display: none">
+										</div>
+
+										<label class="col-md-1 control-label">批次：</label>
+										<div class="col-md-2">
+											<input class="form-control" name="BatchNo" id="BatchNo" autocomplete="off" placeholder="请输入批次进行查询" type="text">
+										</div>
+
+										
+										<div class="col-md-1">
+											<button class="btn btn-primary" id="search" type="button" >
+												<i class="fa fa-search"></i>
+												查询
+											</button>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+							<div class="row no-padding">
+								<div id="tabs">
+									<ul>
+										<li>
+											<a href="#tabs-a">库存统计报表(柱形图）</a>
+										</li>
+										<li>
+											<a href="#tabs-b">库存统计报表（饼图）</a>
+										</li>
+										<li>
+											<a href="#tabs-c">库存统计报表（表格）</a>
+										</li>
+									</ul>
+									<div id="tabs-a">
+										<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+											<div class="widget-body">
+												<div class="jarviswidget jarviswidget-color-blueDark jarviswidget-sortable" id="wid-id-0" data-widget-editbutton="false" data-widget-deletebutton="false">
+													<header>
+														<span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+														<h2>产品库存统计报表（产品统计）</h2>
+													</header>
+													<div>
+														<!-- widget div-->
+														<div id="char1" class="char">
+															
+														</div>
+														<!-- end widget div -->
+													</div>
+												</div>
+											</div>
+										</article>
+										<div class="cl"></div>
+									</div>
+									<div id="tabs-b">
+										<article class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+											<div class="widget-body ">
+												<div class="jarviswidget jarviswidget-color-blueDark jarviswidget-sortable" id="wid-id-0" data-widget-editbutton="false" data-widget-deletebutton="false">
+													
+													<header>
+														<span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+														<h2>入库库存统计报表（入库产品统计）</h2>
+													</header>
+													<div>
+														<!-- widget div-->
+														<div id="char2" class="char">
+															
+														</div>
+
+														<!-- end widget div -->
+														
+													</div>
+												</div>
+											</article>
+
+											<article class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+												<div class="widget-body ">
+													<div class="jarviswidget jarviswidget-color-blueDark jarviswidget-sortable" id="wid-id-0" data-widget-editbutton="false" data-widget-deletebutton="false">
+														
+														<header>
+															<span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+															<h2>出库库存统计报表（出库产品统计）</h2>
+														</header>
+														<div>
+															<div id="char3" class="char">
+																
+															</div>
+														</div>
+													</div>
+												</article>	
+												<!-- 出库统计结束 -->
+												<div class="cl"></div>
+											</div>
+											<div id="tabs-c">
+												<article class="col-sm-12 col-md-12 col-lg-12">
+													<div class="widget-body">
+														<div class="jarviswidget jarviswidget-color-blue" id="wid-id-2" data-widget-editbutton="false" data-widget-deletebutton="false">
+															<header>
+																<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+																<h2>库存统计</h2>
+															</header>
+															<div>
+																<div class="widget-body no-padding">
+																	<div class="table-responsive">
+																		<table id="jqgrid"></table>
+																		<div id="pjqgrid"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</article>
+												<!-- 发货单结束 -->
+												<div class="cl"></div>
+											</div>
+										</div>
+										<!-- 发货单结束 -->
+									</div>
+								</div>
+								<!-- end widget div -->
+							</article>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div id="dialog-detail" title="库存详细信息" style="overflow: hidden;">
+				<table id="jqgrid-detail"></table>
+				<div id="pjqgrid-detail"></div>
+				<div id="tabs2">
+					<ul>
+						
+					</ul>
+				</div>
+			</div>
+			<!-- PAGE FOOTER -->
+			<div class="page-footer">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<span class="txt-color-white" id="copy"></span>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE FOOTER -->
+			<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+			<script data-pace-options='{ "restartOnRequestAfter": true }' src="../js/plugin/pace/pace.min.js"></script>
+
+			<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+			<script>
+				if (!window.jQuery) {
+					document.write('<script src="../js/libs/jquery-2.1.1.min.js"><\/script>');
+				}
+			</script>
+			<script>
+				if (!window.jQuery.ui) {
+					document.write('<script src="../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+				}
+			</script>
+			<!-- IMPORTANT: APP CONFIG -->
+			<script src="../js/jquery.cookie.js"></script>
+			<script src="../js/config.js"></script>
+			<script src="../js/authority.js"></script>
+			<script src="../js/function.js"></script>
+			<script src="../js/left.js"></script>
+			<script src="../js/ribbon.js"></script>
+			<script src="../js/app.config.js"></script>
+			<script src="../js/demo.min.js"></script>
+			<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+			<script src="../js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> 
+			<!-- BOOTSTRAP JS -->
+			<script src="../js/bootstrap/bootstrap.min.js"></script>
+			<!-- CUSTOM NOTIFICATION -->
+			<script src="../js/notification/SmartNotification.min.js"></script>
+			<!-- JARVIS WIDGETS -->
+			<script src="../js/smartwidgets/jarvis.widget.min.js"></script>
+			<!-- JQUERY MASKED INPUT -->
+			<script src="../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+			<script src="../js/app.min.js"></script>
+			<script src="../js/plugin/jqgrid/jquery.jqGrid.min.js"></script>
+			<script src="../js/plugin/jqgrid/grid.locale-cn.js"></script>
+			<script src="../js/plugin/bootstrapvalidator/bootstrapValidator.min.js"></script>
+			<script src="../js/graph.js"></script>
+			<script src="../js/plugin/chartjs/chart.min.js"></script>
+			<script src="kucuen-list.js?t=20171220"></script>
+			<script>
+				$(document).ready(function() {
+					product();
+					$('#tabs').tabs();
+					$("#search").click();
+					$('#tabs2').hide();
+					$('#tabs2').tabs();
+				});
+				
+			// close icon: removing the tab on click
+			$("#tabs2").on("click", 'span.delete-tab', function() {
+				var panelId = $(this).closest("li").remove().attr("aria-controls");
+				$("#" + panelId).remove();
+				tabs.tabs("refresh");
+			});
+			// $(window).on('resize.jqGrid', function () {
+			// 	$("#jqgrid").jqGrid('setGridWidth', $("#content").width()-2);
+			// })
+		</script>
+	</body>
+	</html>

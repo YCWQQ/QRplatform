@@ -1,0 +1,10 @@
+body.ng #header {background-color: #CC3300;}
+
+body.ng .login-info {
+	background: url(../img/ng-cover.png) no-repeat center center;
+	background-size: cover;
+}
+
+body.ng .minifyme {background-color: #CC3300;}
+
+body.ng .login-info img {display: none}

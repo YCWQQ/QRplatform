@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>华美龙溯源演示系统</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> 
+addEventListener("load", function() { 
+	setTimeout(hideURLbar, 0); 
+	}, false); 
+	function hideURLbar(){ 
+		window.scrollTo(0,1); 
+	} 
+</script>
+<meta name="keywords" content="">
+ <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+<link href="login/css/login6style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="login/css/logoBottom.css">
+<script type="text/javascript" src="login/js/jquery.min.js"></script>
+
+</head>
+<body>
+<script>$(document).ready(function(c) {
+	$('.close').on('click', function(c){
+		$('.login-form').fadeOut('slow', function(c){
+	  		$('.login-form').remove();
+		});
+	});	  
+});
+</script>
+<h1>登录表单</h1>
+<div class="login-form">
+	<div class="close"> </div>
+	<div class="head-info">
+		<label class="lbl-1"> </label>
+		<label class="lbl-2"> </label>
+		<label class="lbl-3"> </label>
+	</div>
+	<div class="clear"> </div>
+	<div class="avtar"><img src="login/img/avtar.png"></div>
+	<form>
+		<input type="text" class="text" id="userName" placeholder="Username">
+		<div class="key"><input type="password"  id="userPwd" placeholder="Password"></div>
+		 <div style="float: left;margin-top: -40px;width: 100%;position: absolute;">
+                  <span style="color: #5f5f67;font-size: 15px;">主题选择：</span>
+                 <select id="classVue"  style="color: #677073;height: 35px;width: 70%;background-color: rgba(43, 43, 54, 0.45)">
+                        <option value="smart-style-0">Smart Default</option>
+                        <option value="smart-style-1">Dark Elagance</option> 
+                        <option value="smart-style-2">Ultra Light</option> 
+                        <option value="smart-style-3">Google Skin</option> 
+                        <option selected value="smart-style-4">PixelSmash</option> 
+                        <option value="smart-style-5">Glass</option> 
+                        <option value="smart-style-6">MaterialDesign</option>  
+                        <option value="ng">ng Style</option>
+                 </select>
+        </div> 
+	</form>
+	<div class="signin"><input type="submit" id="Login" value="登&nbsp;&nbsp;录"></div>
+</div>
+<div class="footer">
+	<div class="connects">
+	         <p><span style="margin-left: 10px;color: #2b2828;">Copyright  ©2009-2017 MACS&nbsp;&nbsp;&nbsp;此类浏览器运行系统效果更佳：</span>
+	             <a href="http://www.googlechromer.cn/" style="margin: -4px 0 0 -15px;width: 80px;" title="点击下载谷歌浏览器">
+	                <img class="vchrom" src="login/img/vChrom.png"></img>
+	            </a>
+	            <a  href="http://browser.qq.com" title="点击下载QQ浏览器">
+	                <img class="vqq" src="login/img/vQQ.png"></img>
+	            </a>
+	            <a  href="https://www.mozilla.org/zh-CN/firefox/new/" style="margin-top: -8px;width: 50px;" title="点击下载火狐浏览器">
+	                <img class="vfix" src="login/img/vfix.png"></img>
+	            </a>
+	        </p>     
+	</div>
+</div>
+    <script> if (!window.jQuery) { document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>'); } </script>
+    <script> if (!window.jQuery.ui) { document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>'); } </script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/function.js"></script>
+    <script src="login/js/vue.js"></script>
+<script src="login/js/logoBottom.js"></script>
+<script src="login/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+#content td .glyphicon{
+	font-size:20px;
+	margin:0 auto;
+	text-align:center;
+	cursor:pointer;
+	color:#275b89
+}
+.ui-jqgrid .ui-state-highlight td.td_border{
+	color: #fff!important;
+    background-color: #3a3a3a!important;
+	border-width:3px;
+    border-color: #fff!important;
+}
+
+#body_error{
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    right: 0%;
+    margin-left: 0px;
+    top: 0%;
+    margin-top: 0px;
+    z-index: 9999999999
+}
+
+.ui-jqgrid-btable tr.jqgrow td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow : ellipsis;
+}
+
+
+/*#content,#modal_link{
+  height: 0px;
+  overflow: hidden;
+}*/
+.autoSelectP{
+  position: relative;
+}
+.autoSelect{
+  position: absolute;
+  top:32px;
+  height: auto;
+  max-height: 128px;
+  overflow:auto; 
+  z-index: 999999999;
+  background-color: #f9f9f9;
+  border:1px solid #4ebbf0;
+  display: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-indent: 5px;
+}
+.autoSelect ul{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.autoSelect li{
+  list-style: none;
+  line-height: 32px;
+  background-color: #fefefe;
+  padding-left: 10px;
+}
+
+.autoSelect li:hover{
+  background-color: #4ebbf0;
+  color: #fff;
+}
+
+.DIYdisabled{
+  background-color: #ccc;
+  color: #111;
+}
+
+.offdiv{
+    position:absolute;overflow:scroll;z-index: 9999;  
+    width: 150px;height:200px;  
+    padding: 5px;background: #fff;
+  /*  color: #fff;*/
+    border: 1px solid #cccccc;
+    z-index: 999999
+}
+
+.red{
+  color: red;
+}
+
+/*ng主题样式*/
+body.ng #header {background-color: #CC3300;}
+
+body.ng .login-info {
+  background: url(../img/ng-cover.png) no-repeat center center;
+  background-size: cover;
+}
+
+body.ng .minifyme {background-color: #CC3300;}
+
+body.ng .login-info img {display: none}
+
+#extr-page #main {
+    background: url(../img/ng-index.jpg) no-repeat top center;
+    background-size: 100%;
+}
+
+#wid-id-form{
+  display: none
+}

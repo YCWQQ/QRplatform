@@ -1,0 +1,93 @@
+.adduser-li li{
+	list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+#dt_basic tbody a{
+   cursor: pointer;
+}
+.user_info li{
+    margin: 10px;
+}
+.user_info span{
+    color: coral;
+    font-size: 15px;
+}
+
+.cl{clear:both;}
+
+
+#diqu-tree{
+	width:250px;
+	height:100%;
+	overflow:hidden;
+	background:none;
+	float: left;
+	position: fixed;
+}
+
+#diqu-fixed{
+	overflow: auto;
+	background-color: #FFF
+}
+
+#lv-form{
+	width: auto;
+	position: relative;
+	margin-left: 260px;
+	height: 200px;
+	/*background: #fff;*/
+}
+
+.tree li span{
+	cursor: pointer;
+}
+
+.tree li.active span{
+	background-color: #3276b1;
+	color: #fff;
+}
+
+.tree li span:hover{
+	background-color: #3276b1;
+	border: 1px dotted #2c699d;
+	color:#FFF;
+	-webkit-transition:background 500ms linear;
+	-o-transition:background 500ms linear;
+	transition:background 500ms linear;
+}
+
+.tree li{
+	padding: 10px 5px;
+}
+.tree li a{
+	float: right;
+}
+
+#diqu-tree .jarviswidget>div,#diqu-form .jarviswidget>div{
+	border:none;
+	background:#eee
+}
+
+header #modal_link{
+	margin-top:5px;
+	margin-left:10px;
+	float:left;
+}
+
+#jqgrid td{
+	text-align: center;
+}
+
+th[id*=jqgrid]{
+	text-align: center;
+}
+
+.checkbox_div{
+    border: 1px solid #cfcbcb;
+}
+
+#lv-table{
+	background-color: #FFF;
+}

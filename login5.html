@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://www.17sucai.com/preview/2/2016-07-26/jQuery-VerificationCode/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>华美龙溯源演示系统</title>
+<meta name="author" content="DeathGhost">
+ <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="login/css/login5style.css" tppabs="css/style.css">
+<link rel="stylesheet" href="login/css/logoBottom.css">
+
+<script src="login/js/jquery-2.1.1.min.js"></script>
+<style>
+body{height:100%;background:#16a085;overflow:hidden;}
+canvas{z-index:-1;position:absolute;}
+</style>
+<script>
+$(document).ready(function() {
+  //粒子背景特效
+  $('body').particleground({
+    dotColor: '#5cbdaa',
+    lineColor: '#5cbdaa'
+  });
+
+});
+</script>
+</head>
+<body><canvas class="pg-canvas" width="1280" height="621"></canvas>
+<dl class="admin_login">
+ <dt>
+  <strong>华美龙溯源演示系统</strong>
+  <em>&nbsp;</em>
+ </dt>
+ <dd class="user_icon">
+  <input type="text" placeholder="账号" id="userName" class="login_txtbx">
+ </dd>
+ <dd class="pwd_icon">
+  <input type="password" placeholder="密码" id="userPwd" class="login_txtbx">
+ </dd>
+ <dd class="val_icon">
+    <div style="float: left;margin-top: 11px;width: 60%;">
+                  <span style=" font-size: 15px;position: absolute;color: #fff;">主题选择：</span>
+                  <select id="classVue" style="width: 100%;height: 40px;margin-left: 120px;margin-top: -10px;background-color: rgba(92, 189, 170, 0.59);">
+                       <option value="smart-style-0">Smart Default</option>
+                        <option value="smart-style-1">Dark Elagance</option> 
+                        <option value="smart-style-2">Ultra Light</option> 
+                        <option value="smart-style-3">Google Skin</option> 
+                        <option value="smart-style-4">PixelSmash</option> 
+                        <option value="smart-style-5">Glass</option> 
+                        <option selected value="smart-style-6">MaterialDesign</option>  
+                        <option value="ng">ng Style</option>
+                  </select>
+            </div> 
+   
+  </dd>
+ <dd>
+  <input type="button" value="立即登录" id="Login" class="submit_btn">
+ </dd>
+</dl>
+<div class="footer">    
+     <div class="connects">
+         <p style="float: right">
+            <span>Copyright   ©2009-2017 MACS&nbsp;&nbsp;&nbsp;此类浏览器运行系统效果更佳：</span>
+               <a href="http://www.googlechromer.cn/" style="margin: -4px 0 0 -15px;width: 80px;" title="点击下载谷歌浏览器">
+                  <img class="vchrom" src="login/img/vChrom.png"></img>
+              </a>
+              <a  href="http://browser.qq.com" title="点击下载QQ浏览器">
+                  <img class="vqq" src="login/img/vQQ.png"></img>
+              </a>
+              <a  href="https://www.mozilla.org/zh-CN/firefox/new/" style="margin-top: -8px;width: 50px;" title="点击下载火狐浏览器">
+                  <img class="vfix" src="login/img/vfix.png"></img>
+              </a> 
+            </p>                 
+    </div>
+</div>
+<script src="js/plugin/pace/pace.min.js"></script>
+    <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+    <script> if (!window.jQuery) { document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>'); } </script>
+    <script> if (!window.jQuery.ui) { document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>'); } </script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/function.js"></script>
+    <!-- IMPORTANT: APP CONFIG -->
+    <script src="js/app.config.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- JQUERY VALIDATE -->
+    <script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
+    <!-- JQUERY MASKED INPUT -->
+    <script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+<script src="login/js/jquery_c.js"></script>
+<script src="login/js/Particleground.js" tppabs="js/Particleground.js"></script>
+    <script src="login/js/vue.js"></script>
+ <script src="login/js/logoBottom.js"></script>
+ <script src="login/js/login.js"></script>
+</body>
+</html>

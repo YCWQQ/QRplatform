@@ -1,0 +1,81 @@
+#DistributorM{
+  position: absolute;
+  width:514px;
+  top:32px;
+  height: auto;
+  max-height: 128px;
+  overflow:hidden; 
+  z-index: 999999999;
+  background-color: #f9f9f9;
+  border:1px solid #4ebbf0;
+}
+#DistributorM li{
+	list-style: none;
+	line-height: 32px;
+	background-color: #fefefe;
+	padding-left: 10px;
+}
+
+#DistributorM li:hover{
+	background-color: #4ebbf0;
+	color: #fff;
+}
+
+.trDel{float:right;margin-bottom:15px;margin-left:15px;}
+
+#searchiform{
+  margin-bottom: 20px;
+
+}
+.ui-state-highlight .abtn,.ui-state-highlight .abtn:hover,.ui-state-hover .abtn,.ui-state-hover .btn:hover,.ui-state-hover .btn:link{
+  color:#FFF;
+}
+.ui-widget-content .ui-state-highlight .abtn,.ui-widget-content .ui-state-highlight .abtn:hover{
+  color: #FFF;
+}
+
+#fixedTable>.arrow, #fixedTable>.arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#fixedTable>.arrow {
+    border-width: 11px;
+}
+
+#fixedTable{
+  border:1px solid rgba(0,0,0,.25);
+  border-radius: 3px;
+  padding: 10px;
+  position: absolute;
+  background-color: #FFF;
+  display: none
+}
+
+#fixedTable>.arrow{
+  left: 50%;
+    margin-left: -11px;
+    border-bottom-width: 0;
+    border-top-color: #999;
+    border-top-color: rgba(0,0,0,.25);
+    bottom: -11px;
+}
+
+#fixedTable>.arrow:after {
+    content: " ";
+    border-width: 10px;
+    bottom: 1px;
+    margin-left: -10px;
+    border-bottom-width: 0;
+    border-top-color: #fff;
+}
+
+#ProductNo select{
+    height: 32px;
+    width: 90px;
+    border: 1px solid #ccc;
+}

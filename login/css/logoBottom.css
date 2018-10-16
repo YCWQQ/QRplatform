@@ -1,0 +1,38 @@
+p{
+	color: #fff;
+}
+
+.connect {
+    font-size: 15px;
+    right: 0px;
+    bottom:0px;
+
+    position:fixed; 
+}
+.connect a { 
+    float: right;
+    width: 40px;
+    margin-top: -5px;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+
+.vqq{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px; 
+}
+
+.vfix{
+    width: 40px;
+    height: 40px; 
+    border-radius: 10px;
+}
+
+.vchrom{
+    width: 30px;
+    height: 30px; 
+    border-radius: 10px;
+}

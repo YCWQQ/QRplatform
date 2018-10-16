@@ -1,0 +1,22 @@
+#iform{
+	padding-top: 20px;
+	background-color: #fafafa;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+}
+
+#tabs2 div a{
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 19.1%;
+}
+
+.show-grid .col-md-2{
+	border: 1px solid #f1f1f1;
+	padding: 5px 0px;
+	text-align: center;
+}
+
+.ui-tabs .ui-tabs-panel{
+	min-height: 300px;
+}

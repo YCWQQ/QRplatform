@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en-us" id="extr-page">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- #CSS Links -->
+    <!-- Basic Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="login/css/logoBottom.css">
+
+    <!-- SmartAdmin Styles : Caution! DO NOT change the order -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production-plugins.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-skins.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/demo.min.css">
+
+    <!-- #FAVICONS -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+
+    <!-- #APP SCREEN / ICONS -->
+    <!-- Specifying a Webpage Icon for Web Clip 
+             Ref: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+    <link rel="apple-touch-icon" href="img/splash/sptouch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/splash/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/splash/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/splash/touch-icon-ipad-retina.png">
+
+    <!-- iOS web-app metas : hides Safari UI Components and Changes Status Bar Appearance -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Startup image for web apps -->
+    <link rel="apple-touch-startup-image" href="img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+    <link rel="apple-touch-startup-image" href="img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+    <link rel="apple-touch-startup-image" href="img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/login.css">
+</head>
+
+<body class="animated fadeInDown">
+
+    <header id="header">
+
+        <div id="logo-group">
+            <span id="logo">
+                <img src="img/logo.png" alt="SmartAdmin" style="width:135px; height: 20px;">
+            </span>
+        </div>
+
+        <!-- <span id="extr-page-header-space"><span class="hidden-mobile hiddex-xs">需要一个账户?</span> <a href="#" class="btn btn-danger">创建账户</a> </span> -->
+
+    </header>
+
+    <div id="main" role="main">
+
+        <!-- MAIN CONTENT -->
+        <div id="content" class="container">
+
+            <div class="row">
+                <h1 style="color:#FFF;font-size: 40px;position: absolute;left: 0px;top: 0px;">华美龙——农药二维码溯源管理平台</h1>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4" id="form-div">
+                    <div class="well no-padding">
+                        <form action="index.html" id="login-form" class="smart-form client-form">
+                            <header>
+                                登陆
+                            </header>
+
+                            <fieldset id="erf">
+
+                                <section>
+                                    <label class="label">用户名</label>
+                                    <label class="input">
+                                        <input type="text" name="email" id="userName">
+                                        <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i>请输入用户名</b></label>
+                                </section>
+
+                                <section>
+                                    <label class="label">密&nbsp&nbsp&nbsp&nbsp码</label>
+                                    <label class="input">
+                                        <input type="password" name="password" id="userPwd">
+                                        <b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i>请输入密码</b>
+                                    </label>
+                                </section>
+                            </fieldset>
+                            <footer>
+                               <div style="float: left;margin-top: 15px;">
+                               <span>主题选择：</span>
+                                    <select id="classVue" style="background-color: #faffbd;height: 25px;">
+                                         <option selected value="smart-style-0">Smart Default</option>
+                                         <option value="smart-style-1">Dark Elagance</option> 
+                                         <option value="smart-style-2">Ultra Light</option> 
+                                         <option value="smart-style-3">Google Skin</option> 
+                                         <option value="smart-style-4">PixelSmash</option> 
+                                         <option value="smart-style-5">Glass</option> 
+                                         <option value="smart-style-6">MaterialDesign</option>
+                                         <option value="ng">ng Style</option>
+                                    </select>
+                                </div> 
+                                <button type="submit" class="btn btn-primary" id="Login">
+                                    登陆
+                                </button>
+                            </footer>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+ <div class="footer">      
+         <div class="connects">
+             <p style="float: right">
+              <span>此类浏览器运行系统效果更佳：</span>
+                 <a href="http://www.googlechromer.cn/" style="margin: -4px 0 0 -15px;width: 80px;" title="点击下载谷歌浏览器">
+                    <img class="vchrom" src="login/img/vChrom.png"></img>
+                </a>
+                <a  href="http://browser.qq.com" title="点击下载QQ浏览器">
+                    <img class="vqq" src="login/img/vQQ.png"></img>
+                </a>
+                <a  href="https://www.mozilla.org/zh-CN/firefox/new/" style="margin-top: -8px;width: 50px;" title="点击下载火狐浏览器">
+                    <img class="vfix" src="login/img/vfix.png"></img>
+                </a> 
+              </p>                   
+        </div>
+</div>
+   <!--================================================== -->
+
+    <!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+    <script src="js/plugin/pace/pace.min.js"></script>
+    <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+    <script> if (!window.jQuery) { document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>'); } </script>
+    <script> if (!window.jQuery.ui) { document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>'); } </script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/function.js"></script>
+    <!-- IMPORTANT: APP CONFIG -->
+    <script src="js/app.config.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- JQUERY VALIDATE -->
+    <script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
+    <!-- JQUERY MASKED INPUT -->
+    <script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="login/js/vue.js"></script>
+    <script src="login/js/logoBottom.js"></script>
+    <script type="text/javascript">
+        function IsPC() {
+            var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone",
+                        "SymbianOS", "Windows Phone",
+                        "iPad", "iPod"];
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+        
+        $(function () {
+            if(IsPC()){//判断是否是手机端浏览器
+                let classVue=window.sessionStorage.getItem('selected');
+                //清除cookie session
+                var cookieName=$.cookie('cookie_name');
+                window.sessionStorage.removeItem('user');
+                $.cookie(cookieName, null,{expires: -1});
+            }else{
+                localStorage.clear();  //清除localStorage
+                let classVue=JSON.parse(localStorage.getItem("selected"));
+            }
+            
+            if(classVue == 'ng'){
+              $("head").append("<link>");
+              css = $("head").children(":last");
+              css.attr({
+                  rel: "stylesheet",
+                  type: "text/css",
+                  href: "../css/zt.css"
+              });
+              $('#main').css({"background-image":"url(../img/ng-index.jpg)"});
+            }
+
+        	var getRandomColor = function(){     //随机生成颜色
+					  return  '#' +    
+					    (function(color){    
+					    return (color +=  '0123456789abcdef'[Math.floor(Math.random()*16)])    
+					      && (color.length == 6) ?  color : arguments.callee(color);    
+					  })('');    
+					} 
+			$("select option").each(function(index,el){
+				$(el).css('color',getRandomColor());
+			});
+            
+            $("#Login").click(function () {
+                if(IsPC()){//判断是否是手机端浏览器
+                    window.sessionStorage.setItem('classVue',$("#classVue option:selected").val());
+                }{
+                    localStorage.setItem("classVue",$("#classVue option:selected").val());
+                }
+
+                var userName = $("#userName").val();
+                var userPwd = $("#userPwd").val();
+                var UserUrl = _path+"login/";
+                $.ajax({
+                    dataType: "json",
+                    url: UserUrl,
+                    type: "GET",
+                    data: {
+                        name: userName,
+                        key: userPwd
+                    },
+                    success: function (result) {
+                        if (result) {
+                            if(IsPC()){//判断是否是手机端浏览器
+                                window.sessionStorage.setItem('user',JSON.stringify(result));
+                                window.sessionStorage.setItem('userName',userName);
+                            }{
+                                localStorage.setItem('user',JSON.stringify(result));
+                                localStorage.setItem('userName',userName);
+                            }
+                            if (result.Status == 1) {
+                                GetMenu(result.Key);
+                                location.href = "index.html";
+                            } else if (result.Status == 0) {
+                                $.errorFun("用户名或密码错误！");
+                            }
+                        } else {
+                            var msg = result != null && result.msg != null ? result.msg : "";
+                            $.errorFun("输入的信息有误，请重新输入!" + msg);
+                        }
+                    },
+                    error: function (ex) {
+                        $.errorFun("用户名或密码错误","#erf");
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

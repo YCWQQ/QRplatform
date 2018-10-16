@@ -1,0 +1,145 @@
+.jarviswidget>div .char{
+  width: 80%;
+  float: left;
+}
+
+.jarviswidget>div .chart-form{
+  width: 18%;
+  float: right;
+}
+
+#wid-id-3 section>h4{
+	text-align: center;
+}
+
+#er-text{
+	text-align: center;
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+
+/*#coll tr td:nth-child(odd){
+  font-weight: bold;
+}
+
+#coll tr td:nth-child(even){
+  text-align: left;
+}*/
+
+#chartOrg{
+  position: relative;
+    display: inline-block;
+    top: 10px;
+    left: 10px;
+    height: auto;
+    width: calc(100% - 24px);
+    border-radius: 5px;
+    overflow: auto;
+    text-align: center;
+}
+#chartOrg table{
+  border-spacing: 0;
+  border-collapse: separate;
+}
+.orgchart{
+  display: inline-block;
+    min-height: 202px;
+    min-width: 202px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px dashed rgba(0,0,0,0);
+    padding: 20px;
+}
+
+.orgchart>table:first-child {
+    margin: 20px auto;
+}
+
+.orgchart td {
+    text-align: center;
+    vertical-align: top;
+    padding: 0;
+    height: 24px;
+    line-height: 24px;
+}
+
+.orgchart .boxs .box{
+  width: 100px;
+  height: 26px;
+    line-height: 26px;
+  background-color: #a34;
+  display: inline-block;
+  margin:0 auto;
+  color: #fff;
+}
+
+.orgchart tr.lines .downLine {
+    background-color: rgba(153, 153, 153, 0.8);
+    margin: 0px auto;
+    height: 24px;
+    width: 2px;
+    float: none;
+}
+.orgchart tr.lines .leftLine {
+    border-left: 1px solid rgba(153, 153, 153, 0.8);
+    float: none;
+    border-radius: 0px;
+}
+.orgchart tr.lines .rightLine {
+    border-right: 1px solid rgba(153, 153, 153, 0.8);
+    float: none;
+    border-radius: 0px;
+}
+.orgchart tr.lines .topLine {
+    border-top: 2px solid rgba(153, 153, 153, 0.8);
+    float: none;
+    border-radius: 0px;
+}
+
+.orgchart tr.boxs .box-table{
+    position: relative;
+    margin: 0 10px;
+    text-align: center;
+    width: 200px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+
+.orgchart tr.boxs .box-table tr,.orgchart tr.boxs .box-table td{
+  border: 1px solid #999;
+}
+.orgchart tr.boxs .box-table td:nth-child(1){
+  width: 24px;
+  vertical-align: inherit;
+}
+.orgchart tr.boxs .box-table td:nth-child(2){
+  width: 24px;
+}
+.orgchart tr.boxs .box-table td:nth-child(3){
+  text-align: left;
+  text-indent: 10px;
+}
+
+.orgchart tr.boxs .box-table td .ibox{
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 0 auto;
+}
+
+.red{
+  background-color: #a40; 
+}
+
+.green{
+  background-color: green
+}
+
+.td-text{
+    height: 30px;
+    line-height: 30px;
+}

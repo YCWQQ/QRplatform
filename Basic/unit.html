@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+		<title></title>
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-production-plugins.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-production.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-skins.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-rtl.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/demo.min.css">
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="../css/css.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="apple-touch-icon" href="../img/splash/sptouch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../img/splash/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../img/splash/touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../img/splash/touch-icon-ipad-retina.png">
+		<!-- iOS web-app metas : hides Safari UI Components and Changes Status Bar Appearance -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!-- Startup image for web apps -->
+		<link rel="apple-touch-startup-image" href="../img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+		<link rel="apple-touch-startup-image" href="../img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+		<link rel="apple-touch-startup-image" href="../img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+	</head>
+	<body class="">
+		<!-- HEADER -->
+		<header id="header">
+			<div id="logo-group">
+				<!-- PLACE YOUR LOGO HERE -->
+				<span id="logo"> <a href="/" title="回到首页"><img src="../img/logo.png" alt="SmartAdmin"></a></span>
+				<!-- END LOGO PLACEHOLDER -->
+			</div>
+			<!-- pulled right: nav area -->
+			<div class="pull-right">
+				<!-- collapse menu button -->
+				<div id="hide-menu" class="btn-header pull-right">
+					<span> <a href="./../javascript:void(0);" data-action="toggleMenu" title="隐藏Menu"><i class="fa fa-reorder"></i></a> </span>
+				</div>
+				<!-- end collapse menu -->
+				<!-- #MOBILE -->
+				<!-- logout button -->
+				<div id="logout" class="btn-header transparent pull-right">
+					<span> <a href="./../login.html" title="退出" data-action="userLogout" data-logout-msg="确定要退出管理系统？"><i class="fa fa-sign-out"></i></a> </span>
+				</div>
+				<!-- end logout button -->
+				
+			</div>
+			<!-- end pulled right: nav area -->
+		</header>
+		<!-- END HEADER -->
+		<!-- Left panel : Navigation area -->
+		<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+		<aside id="left-panel">
+			<div class="login-info">
+				<span> <!-- User image size is adjusted inside CSS, it should stay as it --> 
+					<!-- session open -->
+					<a href="./../javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+						<img src="../img/avatars/sunny.png" alt="me" class="online" /> 
+						<span id="cookie"></span>
+						<i class="fa fa-angle-down"></i>
+					</a> 
+				</span>
+			</div>
+			<!-- end user info -->
+			<nav id="nav-left">
+				
+			</nav>
+			<span class="minifyme" data-action="minifyMenu"> 
+				<i class="fa fa-arrow-circle-left hit"></i> 
+			</span>
+		</aside>
+		<!-- END NAVIGATION -->
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+			<!-- RIBBON -->
+			<div id="ribbon">
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li><a href="/" title="回到首页">首页</a></li><li>计量单位管理</li>
+				</ol>
+				<!-- end breadcrumb -->
+			</div>
+			<!-- END RIBBON -->
+			<!-- MAIN CONTENT -->
+			<div id="content">
+				<!-- widget grid -->
+				<section id="widget-grid" class="">
+					<!-- row -->
+					<div class="row">
+						<!-- NEW WIDGET START -->
+						<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" data-widget-editbutton="false">
+								<header>
+									<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+									<h2>计量单位管理</h2>
+									<a href="#" id="modal_link" class="btn btn-primary btn-xs">添加计量单位</a>
+								</header>
+								<div>
+									<label>
+										<div id="search-div" class="btn btn-sm btn-primary" style="float:right"><span class="fa fa-search"></span></div>
+										<input style="float:left;display: inline-block;width: 250px;margin-right:10px;vertical-align: middle;" type="search" id="search-html" class="form-control" placeholder="请输入计量单位名称或者编号" >
+									</label>
+									<label for="" style="float: right;">
+										<button id="ToggleColumns" class="btn btn-success">显示/隐藏列</button>
+									</label>
+								</div>
+								<!-- widget div-->
+								<div>
+									<!-- widget edit box -->
+									<div class="jarviswidget-editbox">
+										<!-- This area used as dropdown edit box -->
+									</div>
+									<!-- end widget edit box -->
+									<!-- widget content -->
+									<div class="widget-body no-padding">
+				                        <table id="jqgrid"></table>
+							            <div id="pjqgrid"></div>
+									</div>
+									<!-- end widget content -->
+								</div>
+								<!-- end widget div -->
+							</div>
+							<!-- end widget -->
+						</article>
+						<!-- WIDGET END -->
+					</div>
+					<!-- end row -->
+				</section>
+				<!-- end widget grid -->
+			</div>
+			<!-- END MAIN CONTENT -->
+		</div>
+		<!-- END MAIN PANEL -->
+		
+		<div id="dialog-message" title="单位管理">
+			<div class="widget-body">
+				<form class="form-horizontal" id="iform"  method="get" action="">
+					<fieldset>
+						<div class="form-group">
+							<label class="col-md-2 control-label">单位编号：</label>
+							<div class="col-md-10">
+								<input class="form-control" id="UnitNo" name="UnitNo" placeholder="必填项" type="text">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">单位名称：</label>
+							<div class="col-md-10">
+								<input class="form-control" id="UnitName" name="UnitName" placeholder="必填项" type="text">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">单位数量：</label>
+							<div class="col-md-10">
+								<input class="form-control" id="Qty" name="Qty" placeholder="必填项" type="text">
+							</div>
+						</div>	
+							
+					</fieldset>
+					<div class="form-group">
+						<label class="col-md-2 control-label">备注：</label>
+						<div class="col-md-10">
+							<textarea class="form-control" id="Remark" name="Remark" placeholder="" rows="4"></textarea>
+						</div>
+					</div>
+					<div class="form-actions">
+						<div class="row">
+							<div class="col-md-12">
+								<button class="btn btn-primary" id="add" type="submit">
+									<i class="fa fa-save"></i>
+									添加
+								</button>
+								<button class="btn btn-primary" id="update" type="submit">
+									<i class="fa fa-save"></i>
+									修改
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- PAGE FOOTER -->
+		<div class="page-footer">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<span class="txt-color-white" id="copy"></span>
+				</div>
+			</div>
+		</div>
+		<!-- END PAGE FOOTER -->
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../js/plugin/pace/pace.min.js"></script>
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="../js/libs/jquery-2.1.1.min.js"><\/script>');
+			}
+		</script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>
+		<!-- IMPORTANT: APP CONFIG -->
+		<script src="../js/jquery.cookie.js"></script>
+		<script src="../js/config.js"></script>
+		<script src="../js/authority.js"></script>
+		<script src="../js/function.js"></script>
+		<script src="../js/left.js"></script>
+		<script src="../js/ribbon.js"></script>
+		<script src="../js/app.config.js"></script>
+		<script src="../js/demo.min.js"></script>
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+		<script src="../js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> 
+		<!-- BOOTSTRAP JS -->
+		<script src="../js/bootstrap/bootstrap.min.js"></script>
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="../js/notification/SmartNotification.min.js"></script>
+		<!-- JARVIS WIDGETS -->
+		<script src="../js/smartwidgets/jarvis.widget.min.js"></script>
+		<!-- JQUERY MASKED INPUT -->
+		<script src="../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+		<script src="../js/app.min.js"></script>
+        <script src="../js/plugin/jqgrid/jquery.jqGrid.min.js"></script>
+		<script src="../js/plugin/jqgrid/grid.locale-cn.js"></script>
+		<script src="../js/plugin/bootstrapvalidator/bootstrapValidator.min.js"></script>
+		<script src="unit.js?t=20180425"></script>
+		<script type="text/javascript">
+		    $(window).on('resize.jqGrid', function () {
+		        $("#jqgrid").jqGrid('setGridWidth', $("#content").width());
+		    })
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+		<title></title>
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/font-awesome.min.css">
+		<!-- SmartAdmin Styles : Caution! DO NOT change the order -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-production-plugins.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-production.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-skins.min.css">
+		<!-- SmartAdmin RTL Support  -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-rtl.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/demo.min.css">
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="../css/css.css">
+		<link rel="stylesheet" href="user.css">
+		<link rel="apple-touch-icon" href="../img/splash/sptouch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../img/splash/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../img/splash/touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../img/splash/touch-icon-ipad-retina.png">
+		<!-- iOS web-app metas : hides Safari UI Components and Changes Status Bar Appearance -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!-- Startup image for web apps -->
+		<link rel="apple-touch-startup-image" href="../img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+		<link rel="apple-touch-startup-image" href="../img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+		<link rel="apple-touch-startup-image" href="../img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+		<style>
+			#lv-tbody label{
+				margin-right: 20px;
+			}
+			#lv-tbody label input{
+				margin-right: 5px;
+			}
+		</style>
+	</head>
+	<body class="">
+		<!-- HEADER -->
+		<header id="header">
+			<div id="logo-group">
+				<!-- PLACE YOUR LOGO HERE -->
+				<span id="logo"> <a href="/" title="回到首页"><img src="../img/logo.png" alt="SmartAdmin"></a></span>
+				<!-- END LOGO PLACEHOLDER -->
+			</div>
+			<!-- pulled right: nav area -->
+			<div class="pull-right">
+				<!-- collapse menu button -->
+				<div id="hide-menu" class="btn-header pull-right">
+					<span> <a href="./../javascript:void(0);" data-action="toggleMenu" title="隐藏Menu"><i class="fa fa-reorder"></i></a> </span>
+				</div>
+				<!-- end collapse menu -->
+				<!-- #MOBILE -->
+				<!-- logout button -->
+				<div id="logout" class="btn-header transparent pull-right">
+					<span> <a href="./../login.html" title="退出" data-action="userLogout" data-logout-msg="确定要退出管理系统？"><i class="fa fa-sign-out"></i></a> </span>
+				</div>
+				<!-- end logout button -->
+				
+			</div>
+			<!-- end pulled right: nav area -->
+		</header>
+		<!-- END HEADER -->
+		<aside id="left-panel">
+			<div class="login-info">
+				<span> <!-- User image size is adjusted inside CSS, it should stay as it --> 
+					<!-- session open -->
+					<a href="./../javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+						<img src="../img/avatars/sunny.png" alt="me" class="online" /> 
+						<span id="cookie"></span>
+						<i class="fa fa-angle-down"></i>
+					</a> 
+				</span>
+			</div>
+			<!-- end user info -->
+			<nav id="nav-left">
+				
+			</nav>
+			<span class="minifyme" data-action="minifyMenu"> 
+				<i class="fa fa-arrow-circle-left hit"></i> 
+			</span>
+		</aside>
+		<!-- END NAVIGATION -->
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+			<!-- RIBBON -->
+			<div id="ribbon">
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li><a href="/" title="回到首页">首页</a></li><li>角色管理</li>
+				</ol>
+				<!-- end breadcrumb -->
+			</div>
+			<!-- END RIBBON -->
+			<!-- MAIN CONTENT -->
+			<div id="content" style="overflow: auto;">
+				<!-- aside statr -->
+				<aside id="diqu-tree">
+					<!-- NEW WIDGET START -->
+						<article class="" id="diqu-fixed">
+							<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget jarviswidget-color-blue" id="wid-id-1" data-widget-editbutton="false">
+								<!-- widget div-->
+								<div>
+									<!-- widget content -->
+									<div class="widget-body">
+										<div class="tree smart-form">
+										  <table id="jqgrid"></table>
+							            	<div id="pjqgrid"></div>
+											<ul>
+												<li>
+													<span><i class="fa fa-lg fa-folder-open"></i> 全部</span>
+													<a href="#" onclick="add_user()" id="modal_link" class="btn btn-primary btn-sm"> 添加角色 </a>
+													<ul id="userTab">
+														<li id="userTab">
+															<span title="点击查看权限信息" onclick="power_info();"> 
+																数据统计员 
+															</span>
+															<a href="javascript:void(0);" title="详细信息" onclick="role_list()" class="btn btn-default btn-circle"><i class="fa fa-pencil-square-o"></i></a>
+														</li>
+																																								
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- end widget content -->
+								</div>
+								<!-- end widget div -->
+							</div>
+							<!-- end widget -->
+						</article>
+						<!-- WIDGET END -->
+				</aside>
+				<!-- aside end  -->
+				<div id="lv-form" style="display: none;">
+					<div class="select_qx">
+						<!-- widget content -->
+							<div class="table-responsive">
+								<table id="lv-table" class="table table-bordered">
+									<thead>
+										<tr>
+											<th width="180"><label for="All_checked"><input id="All_checked" type="checkbox" name="checkbox-inline" onclick="All_check()"> 模块名称</label></th>
+											<th><label for="">控制权限</label></th>
+										</tr>
+									</thead>
+									<tbody id="lv-tbody">
+										
+									</tbody>
+								</table>
+		
+							</div>
+							<div class="form-actions">
+									<div class="row">
+										<div class="col-md-12" style="float: none;">
+											<button class="btn btn-primary" onclick="subQuxan();" type="submit">
+												<i class="fa fa-save"></i>
+												保存
+											</button>
+										</div>
+									</div>
+								</div>
+						<!-- end widget content -->
+					</div>
+				</div>
+				<div class="cl"></div>
+			<!-- diqu-form end -->
+			<!-- END MAIN CONTENT -->
+			</div>
+		</div>
+		<!-- END MAIN PANEL -->
+		<div id="dialog-message" title="添加角色">
+			<!-- diqu-form strat -->
+						<!-- widget content -->
+			<div class="widget-body">
+				<form class="form-horizontal" id="Newuser">
+					<fieldset>
+						<div class="form-group">
+							<label class="col-md-2 control-label">角色名称：</label>
+							<div class="col-md-10">
+								<input class="form-control" name="GroupName" id="GroupName" placeholder="请填写角色代码" type="text">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">企业名称：</label>
+							<div class="col-md-10">
+								<select class="form-control" placeholder="" name="OrganizationId" id="OrganizationId">
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">备注：</label>
+							<div class="col-md-10">
+								<textarea class="form-control" name="Remark" id="Remark" rows="4"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+						   <label class="col-md-2 control-label"></label>
+						   <div class="col-md-10" style="height: 20px;" id="es">
+						   </div>
+						</div>
+						<div class="form-actions">
+						<div class="row">
+							<div class="col-md-12">
+								<button class="btn btn-primary" id="adsub" type="submit" >
+									<i class="fa fa-plus-square"></i>
+									添加
+								</button>
+								<button class="btn btn-danger" data-qx='删除' style="display: none;" id="delsub" >
+									<i class="fa fa-trash-o"></i>
+									删除
+								</button>
+								<button class="btn btn-primary" data-qx='修改' id="upsub" style="display: none;" type="submit">
+									<i class="fa fa-save"></i>
+									保存
+								</button>
+							</div>
+						</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>				
+		</div>
+		<!-- PAGE FOOTER -->
+		<div class="page-footer">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<span class="txt-color-white" id="copy"></span>
+				</div>
+			</div>
+		</div>
+		<!-- END PAGE FOOTER -->
+		<!--================================================== -->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../js/plugin/pace/pace.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="../js/libs/jquery-2.1.1.min.js"><\/script>');
+			}
+		</script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>
+		<!-- IMPORTANT: APP CONFIG -->
+		<script src="../js/jquery.cookie.js"></script>
+		<script src="../js/config.js"></script>
+		<script src="../js/authority.js"></script>
+		<script src="../js/function.js"></script>
+		<script src="../js/left.js"></script>
+		<script src="../js/app.config.js"></script>
+		<script src="../js/demo.min.js"></script>
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+		<script src="../js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> 
+		<!-- BOOTSTRAP JS -->
+		<script src="../js/bootstrap/bootstrap.min.js"></script>
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="../js/notification/SmartNotification.min.js"></script>
+		<!-- JARVIS WIDGETS -->
+		<script src="../js/smartwidgets/jarvis.widget.min.js"></script>
+		<!-- JQUERY MASKED INPUT -->
+		<script src="../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+		<script src="../js/app.min.js"></script>
+		<script src="../js/plugin/bootstrapvalidator/bootstrapValidator.min.js"></script>
+		<script src="lv.js?t=20171222"></script>
+	</body>
+
+</html>

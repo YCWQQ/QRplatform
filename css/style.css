@@ -1,0 +1,33 @@
+.cl{clear:both;}
+
+
+#diqu-tree{
+	width:100%;
+	height:100%;
+	overflow:auto;
+	background:#fff;
+}
+
+#diqu-tree .jarviswidget>div,#diqu-form .jarviswidget>div{
+	border:none;
+	background:#eee
+}
+
+/*#diqu-form{
+	width:550px;
+}*/
+
+header #modal_link,header .download{
+	margin-top:5px;
+	margin-left:10px;
+	float:left;
+}
+
+.form-control-css{
+	width:31.4%;
+	display:inline-block;
+}
+
+#jqgrid,.ui-jqgrid .ui-jqgrid-htable{
+	min-width: 1000px;
+}

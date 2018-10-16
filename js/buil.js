@@ -1,0 +1,208 @@
+[{
+	"Info": "[{\"url\":\"\",\"icon\":\"fa-home\",\"others\":\"\"}]",
+	"ModuleId": 1,
+	"ModuleName": "基础信息管理",
+	"ModuleNo": "1",
+	"ParentId": 0,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Basic\/diqu.html\",\"icon\":\"\",\"others\":\"33\"}]",
+	"ModuleId": 2,
+	"ModuleName": "地区管理",
+	"ModuleNo": "2",
+	"ParentId": 1,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Basic\/jingxiaos-list.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 3,
+	"ModuleName": "经销商管理",
+	"ModuleNo": "3",
+	"ParentId": 1,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Basic\/shengchan-list.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 4,
+	"ModuleName": "生产场景管理",
+	"ModuleNo": "4",
+	"ParentId": 1,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Basic\/merge.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 7,
+	"ModuleName": "箱跺管理",
+	"ModuleNo": "7",
+	"ParentId": 1,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Basic\/team.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 8,
+	"ModuleName": "班组管理",
+	"ModuleNo": "8",
+	"ParentId": 1,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Basic\/unit.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 9,
+	"ModuleName": "计量单位管理",
+	"ModuleNo": "9",
+	"ParentId": 1,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Basic\/department.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 1055,
+	"ModuleName": "部门管理",
+	"ModuleNo": "1055",
+	"ParentId": 1,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"\",\"icon\":\"fa-cube\",\"others\":\"\"}]",
+	"ModuleId": 10,
+	"ModuleName": "品牌产品管理",
+	"ModuleNo": "10",
+	"ParentId": 0,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Product\/pinpai-list.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 11,
+	"ModuleName": "品牌管理",
+	"ModuleNo": "11",
+	"ParentId": 10,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Product\/chanpin-list.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 12,
+	"ModuleName": "产品管理",
+	"ModuleNo": "12",
+	"ParentId": 10,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"\",\"icon\":\"fa-list-alt\",\"others\":\"\"}]",
+	"ModuleId": 13,
+	"ModuleName": "订单管理",
+	"ModuleNo": "13",
+	"ParentId": 0,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Order\/outOrder.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 14,
+	"ModuleName": "发货订单",
+	"ModuleNo": "14",
+	"ParentId": 13,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Order\/inOrder.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 15,
+	"ModuleName": "生产订单",
+	"ModuleNo": "15",
+	"ParentId": 13,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"\",\"icon\":\"fa-desktop\",\"others\":\"\"}]",
+	"ModuleId": 16,
+	"ModuleName": "编码管理",
+	"ModuleNo": "16",
+	"ParentId": 0,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Query\/wuliu-seach.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 17,
+	"ModuleName": "物流编码查询",
+	"ModuleNo": "17",
+	"ParentId": 16,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"\",\"icon\":\"fa-cloud\",\"others\":\"\"}]",
+	"ModuleId": 18,
+	"ModuleName": "统计报表",
+	"ModuleNo": "18",
+	"ParentId": 0,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Table\/ruku-list.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 19,
+	"ModuleName": "入库统计",
+	"ModuleNo": "19",
+	"ParentId": 18,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Table\/chuku-list.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 20,
+	"ModuleName": "出库统计",
+	"ModuleNo": "20",
+	"ParentId": 18,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Table\/kucuen-list.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 21,
+	"ModuleName": "库存统计",
+	"ModuleNo": "21",
+	"ParentId": 18,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Basic\/Position.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 53,
+	"ModuleName": "存储场景管理",
+	"ModuleNo": "36",
+	"ParentId": 1,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Query\/Bill.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 1052,
+	"ModuleName": "制定编码",
+	"ModuleNo": "48",
+	"ParentId": 16,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}, {
+	"Info": "[{\"url\":\"Basic\/facilitator.html\",\"icon\":\"\",\"others\":\"\"}]",
+	"ModuleId": 1054,
+	"ModuleName": "服务商管理",
+	"ModuleNo": "49",
+	"ParentId": 1,
+	"Remark": null,
+	"Status": 1,
+	"TagName": "w"
+}]

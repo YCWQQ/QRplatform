@@ -1,0 +1,51 @@
+.trDel{float:right;margin-bottom:15px;margin-left:15px;}
+#searchiform{
+  margin-bottom: 20px;
+
+}
+.ui-state-highlight .abtn,.ui-state-highlight .abtn:hover,.ui-state-hover .abtn,.ui-state-hover .btn:hover,.ui-state-hover .btn:link{
+  color:#FFF;
+}
+.ui-widget-content .ui-state-highlight .abtn,.ui-widget-content .ui-state-highlight .abtn:hover{
+  color: #FFF;
+}
+
+#fixedTable>.arrow, #fixedTable>.arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#fixedTable>.arrow {
+    border-width: 11px;
+}
+
+#fixedTable{
+	border:1px solid rgba(0,0,0,.25);
+	border-radius: 3px;
+	padding: 10px;
+	position: absolute;
+	background-color: #FFF;
+	display: none
+}
+
+#fixedTable>.arrow{
+	left: 50%;
+    margin-left: -11px;
+    border-bottom-width: 0;
+    border-top-color: #999;
+    border-top-color: rgba(0,0,0,.25);
+    bottom: -11px;
+}
+
+#fixedTable>.arrow:after {
+    content: " ";
+    border-width: 10px;
+    bottom: 1px;
+    margin-left: -10px;
+    border-bottom-width: 0;
+    border-top-color: #fff;
+}

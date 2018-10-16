@@ -1,0 +1,38 @@
+#ProCode{
+	width:100%;
+	height: auto;
+}
+#ProCode span{
+	display: inline-block;
+	border-radius: 5px;
+	color: #FFF;
+	background-color: #3276b1;
+	padding: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.treeLeft{
+	width: 100px;
+	margin-right: 10px;
+	float: left;
+}
+
+.treeRight{
+	width: auto;
+	float: left;
+}
+
+.treeRight h1{
+	border-bottom: 1px solid #DDD;
+	margin-bottom: 5px;
+}
+
+/*#No{
+	color: blue;
+	cursor: pointer;
+}*/
+
+.CCode{
+	color: #3276b1;
+	cursor: pointer;
+}
